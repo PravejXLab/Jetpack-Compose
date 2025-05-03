@@ -41,11 +41,10 @@ fun Progression() {
                         )
                     }
                 }
-
-                when (selectedTab) {
-                    0 -> AP()
-                    1 -> GP()
-                }
+            }
+            when (selectedTab) {
+                0 -> AP()
+                1 -> GP()
             }
         }
     }

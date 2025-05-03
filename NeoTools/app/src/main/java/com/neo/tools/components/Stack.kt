@@ -14,7 +14,9 @@ import com.neo.tools.R
 fun Stack(
     onClick: () -> Unit,
     onClickAge: () -> Unit,
-    onClickDateDifference: () -> Unit
+    onClickDateDifference: () -> Unit,
+    onClickFlashlight: () -> Unit,
+    onClickProgression: () -> Unit
 ) {
     Column {
         Row(
@@ -57,7 +59,7 @@ fun Stack(
                 image = R.drawable.calculator_progression,
                 text = "AP & GP",
                 modifier = Modifier.weight(1f),
-                onClick = onClick
+                onClick = onClickProgression
             )
             Tool(
                 image = R.drawable.calculator_interest,
@@ -115,10 +117,10 @@ fun Stack(
                 .padding(8.dp)
         ) {
             Tool(
-                image = R.drawable.calculator_hcf,
-                text = "HCF",
+                image = R.drawable.flashlight,
+                text = "Flashlight",
                 modifier = Modifier.weight(1f),
-                onClick = onClickDateDifference
+                onClick = onClickFlashlight
             )
             Tool(
                 image = R.drawable.calculator_lcm,

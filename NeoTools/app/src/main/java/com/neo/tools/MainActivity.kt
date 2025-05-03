@@ -15,8 +15,10 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.neo.tools.basic_tools.Flashlight.Flashlight
 import com.neo.tools.calculator.age.AgeCalculator
 import com.neo.tools.calculator.date_difference.DateDifference
+import com.neo.tools.calculator.progression.Progression
 import com.neo.tools.components.StackVisibility
 import com.neo.tools.components.TopBar
 import com.neo.tools.ui.theme.NeoToolsTheme
@@ -33,6 +35,8 @@ class MainActivity : ComponentActivity() {
                     composable("home") { NeoTools(navController) }
                     composable("Age Calculator") { AgeCalculator(navController) }
                     composable("Date difference") { DateDifference(navController) }
+                    composable("Progression") { Progression() }
+                    composable("Flashlight") { Flashlight() }
                 }
             }
         }
@@ -52,7 +56,9 @@ fun NeoTools(navController: NavController) {
             StackVisibility(
                 onClick = {},
                 onClickAge = { navController.navigate("Age Calculator") },
-                onClickDateDifference = { navController.navigate("Date Difference")},
+                onClickProgression = { navController.navigate("Progression") },
+                onClickDateDifference = { navController.navigate("Date Difference") },
+                onClickFlashlight = { navController.navigate("Flashlight") }
             )
         }
     }

@@ -25,7 +25,9 @@ import androidx.compose.ui.unit.sp
 fun StackVisibility(
     onClick: () -> Unit,
     onClickAge: () -> Unit,
-    onClickDateDifference: () -> Unit
+    onClickDateDifference: () -> Unit,
+    onClickFlashlight: () -> Unit,
+    onClickProgression: () -> Unit
 ) {
     var visibility by remember { mutableStateOf(true) }
 
@@ -38,7 +40,9 @@ fun StackVisibility(
             Stack(
                 onClick = onClick,
                 onClickAge = onClickAge,
-                onClickDateDifference = onClickDateDifference
+                onClickDateDifference = onClickDateDifference,
+                onClickFlashlight = onClickFlashlight,
+                onClickProgression = onClickProgression
             )
         }
     }
