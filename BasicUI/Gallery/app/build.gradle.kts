@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.compass"
+    namespace = "com.gallery"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.compass"
+        applicationId = "com.gallery"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
@@ -41,6 +41,9 @@ android {
 
 dependencies {
 
+    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.compass"
+    namespace = "com.progress.illusion"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.compass"
+        applicationId = "com.progress.illusion"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
