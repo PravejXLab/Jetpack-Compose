@@ -21,8 +21,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.progress.illusion.AppList
-import com.progress.illusion.Data
 import com.progress.illusion.commonfiles.CommonAppList
 import com.progress.illusion.commonfiles.TopBar
 import java.time.LocalDate
@@ -66,9 +64,9 @@ fun NeoTools() {
 @Composable
 fun NeoAppListStack() {
     Column() {
-        CommonAppList("Compass", false)
-        CommonAppList("Screen Light", false)
-        CommonAppList("Calculator", false)
+        CommonAppList("Compass", true)
+        CommonAppList("Screen Light", true)
+        CommonAppList("Calculator", true)
         CommonAppList("Notes", false)
         CommonAppList("Unit Converter", false)
         CommonAppList("Fuel Cost", false)

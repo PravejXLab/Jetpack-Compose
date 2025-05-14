@@ -4,9 +4,9 @@ import java.time.LocalDate
 import java.time.Period
 
 class NeoData(
-    checked1: Boolean = false,
-    checked2: Boolean = false,
-    checked3: Boolean = false,
+    checked1: Boolean = true,
+    checked2: Boolean = true,
+    checked3: Boolean = true,
     checked4: Boolean = false,
     checked5: Boolean = false,
     checked6: Boolean = false,
